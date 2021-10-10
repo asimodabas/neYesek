@@ -1,0 +1,36 @@
+<ion-view view-title="Playlist">
+  <ion-content>
+    <h1>{{bilgi.adi}}</h1>
+
+
+    <div class="list card">
+
+
+  <div class="item item-body">
+    <img class="full-image" src="{{bilgi.img}}">
+    <h3>{{bilgi.adi}}</h3>
+    <p>
+  {{bilgi.tarfi}}
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+</div>
+
+
+
+
+<ul class="list">
+    <li class="item" ng-repeat="mal in bilgi.malzeme">
+      {{mal.adi}} - {{mal.miktar}}
+       <span class="badge badge-assertive">{{mal.kalori}}</span>
+    </li>
+</ul>
+
+
+
+  </ion-content>
+</ion-view>

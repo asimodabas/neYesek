@@ -1,0 +1,34 @@
+<ion-view view-title="neYesek">
+  <ion-content>
+
+
+  	<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search" ng-model="kelime">
+  </label>
+</div>
+
+
+
+
+
+    <a class="list card" ng-repeat="yemek in yemekler" href="#/app/playlists/{{yemek.id}}">
+
+
+  <div class="item item-image">
+    <img src="{{yemek.img}}">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-music-note"></i>
+    Start listening
+  </a>
+
+</a>
+
+
+
+
+  </ion-content>
+</ion-view>

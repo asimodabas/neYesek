@@ -1,0 +1,31 @@
+<!-- Default back button -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+    <img src="{{yemekDetay.resim}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{yemekDetay.adi}}</ion-card-subtitle>
+   
+    </ion-card-header>
+    <ion-card-content>
+    {{yemekDetay.tarif}}  
+    </ion-card-content>
+    <ion-list>
+      
+      <ion-item *ngFor="let ahmet of yemekDetay.malzeme">
+        <ion-label>{{ahmet.adi}}</ion-label>
+      </ion-item>
+    </ion-list>
+  
+  </ion-card>
+
+</ion-content>
